@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <fieldset>
+            <h1 class="title">Create Account</h1>
+            <form id="account-form">
+                <label for="name">Nombre
+                    <input class="input-style" type="text" id="name" required name="name">
+                    <img id="name-icon-success" class="hidden" src="images/success-icon.svg" />
+                    <img id="name-icon-error" class="hidden" src="images/error-icon.svg" />
+                </label>
+                <span id="nameRequired" class="error-message hidden">Rellene este campo.</span>
+                <span id="nameValidate" class="error-message  hidden">No se admiten carácteres
+                    numéricos.</span>
+
+                <label for="email"> Email
+                    <input class="input-style" type="email" name="email" required id="email">
+                    <img id="email-icon-success" class="hidden" src="images/success-icon.svg" />
+                    <img id="email-icon-error" class="hidden" src="images/error-icon.svg" />
+                </label>
+                <span id="emailRequired" class="error-message hidden">Rellene este campo.</span>
+                <span id="emailValidate" class="error-message hidden">El email no tiene un formato
+                    valido</span>
+
+                <label for="pass"> Clave
+                    <input class="input-style" type="password" name="pass" required id="pass">
+                    <img id="pass-icon-success" class="hidden" src="images/success-icon.svg" />
+                    <img id="pass-icon-error" class="hidden" src="images/error-icon.svg" />
+                </label>
+                <span id="passRequired" class="error-message hidden">Rellene este campo.</span>
+                <span id="passValidate" class="error-message hidden">No debe tener mas de 8 caracteres.</span>
+
+                <label for="confirm"> Confirme su clave
+                    <input class="input-style" type="password" name="confirm" required id="confirm">
+                    <img id="confirm-icon-success" class="hidden" src="images/success-icon.svg" />
+                    <img id="confirm-icon-error" class="hidden" src="images/error-icon.svg" /> </label>
+                <span id="confirmRequired" class="error-message hidden">Rellene este campo.</span>
+                <span id="confirmValidate" class="error-message hidden">Las contraseñas no coinciden.</span>
+
+                <button class="input-style btn-large" type="submit" id="submitBtn"> Enviar</button>
+            </form>
+        </fieldset>
+    </main>
+</body>
+<script src="./index.js"></script>
+
+</html>
